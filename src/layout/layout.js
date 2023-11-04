@@ -1,20 +1,23 @@
 import React from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
+import Link from "next/link";
 const { Header, Content, Footer } = Layout;
-
 const RootLayout = ({ children }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
     <Layout className="layout">
-      {/* <Header
+      <Header
         style={{
           display: "flex",
           alignItems: "center",
         }}
       >
         <div className="demo-logo" />
+        <Link href="/" className="text-[#0000ff]">
+          PC Builder
+        </Link>
         <Menu
           theme="dark"
           mode="horizontal"
@@ -27,8 +30,7 @@ const RootLayout = ({ children }) => {
             };
           })}
         />
-      </Header> */}
-      <h2>Header</h2>
+      </Header>
       <Content
         style={{
           padding: "0 50px",
@@ -57,8 +59,7 @@ const RootLayout = ({ children }) => {
           textAlign: "center",
         }}
       >
-        PC-Builder ©2023 Created by{" "}
-        <a href="https://github.com/nisharga">Nisharga Kabir</a>
+        Ant Design ©2023 Created by Ant UED
       </Footer>
     </Layout>
   );

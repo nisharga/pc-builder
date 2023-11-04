@@ -1,5 +1,6 @@
 import DropdownMenu from "@/components/shared/menu/dropdownMenu";
 import RootLayout from "@/layout/layout";
+
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -7,6 +8,19 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2 className="bg-red-500">PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
+      <h2>PC Builder Home</h2>
       <h2>PC Builder Home</h2>
       <DropdownMenu />
     </>
