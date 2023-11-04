@@ -8,7 +8,7 @@ const RootLayout = ({ children }) => {
   } = theme.useToken();
   return (
     <Layout className="layout">
-      <Header
+      {/* <Header
         style={{
           display: "flex",
           alignItems: "center",
@@ -27,7 +27,8 @@ const RootLayout = ({ children }) => {
             };
           })}
         />
-      </Header>
+      </Header> */}
+      <h2>Header</h2>
       <Content
         style={{
           padding: "0 50px",

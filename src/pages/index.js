@@ -1,3 +1,4 @@
+import DropdownMenu from "@/components/shared/menu/dropdownMenu";
 import RootLayout from "@/layout/layout";
 import { Inter } from "next/font/google";
 
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <>
       <h2>PC Builder Home</h2>
+      <DropdownMenu />
     </>
   );
 }
