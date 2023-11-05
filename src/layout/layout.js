@@ -1,7 +1,10 @@
 import React from "react";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Breadcrumb, Layout, theme } from "antd";
 import Link from "next/link";
+import Ssgmenu from "@/components/ssgmenu/ssgmenu";
 const { Header, Content, Footer } = Layout;
+import { Button } from "antd";
+
 const RootLayout = ({ children }) => {
   const {
     token: { colorBgContainer },
@@ -12,24 +15,18 @@ const RootLayout = ({ children }) => {
         style={{
           display: "flex",
           alignItems: "center",
+          justifyContent: "space-between",
         }}
       >
-        <div className="demo-logo" />
-        <Link href="/" className="text-[#0000ff]">
-          PC Builder
+        <Link href="/" className="text-[#0000ff] font-bold text-2xl">
+          Dream Tech
         </Link>
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["2"]}
-          items={new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
+        <Ssgmenu />
+        <div className="w-[200px] ml-4 lg:block d-none">
+          <Button type="default" block size="large" className="text-blue-500">
+            PC Builder
+          </Button>
+        </div>
       </Header>
       <Content
         style={{
