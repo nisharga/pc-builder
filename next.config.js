@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+// const nextConfig = {
+//   reactStrictMode: true,
+// };
 
-module.exports = nextConfig
+// module.exports = nextConfig;
+module.exports = {
+  images: {
+    domains: ["www.startech.com.bd"], // Add your domain here
+  },
+};
