@@ -18,11 +18,11 @@ const ramSlice = createSlice({
         state.ramproducts.push({ ...action.payload, quantity: 1 });
       }
     },
-    removeFromCartRam: (state, action) => {
+    /* removeFromCartRam: (state, action) => {
       state.ramproducts = state.ramproducts.filter(
         (product) => product._id !== action.payload._id
       );
-    },
+    }, */
   },
 });
 

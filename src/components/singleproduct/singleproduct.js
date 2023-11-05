@@ -8,7 +8,6 @@ const Singleproduct = ({ data }) => {
   const dispatch = useDispatch();
   const router = useRouter();
   const handleAdd = (data) => {
-    dispatch(removeFromCartRam(data));
     dispatch(addToCartRam(data));
     router.push("/pcbuilder");
   };

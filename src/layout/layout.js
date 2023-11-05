@@ -23,9 +23,11 @@ const RootLayout = ({ children }) => {
         </Link>
         <Ssgmenu />
         <div className="w-[200px] ml-4 lg:block d-none">
-          <Button type="default" block size="large" className="text-blue-500">
-            PC Builder
-          </Button>
+          <Link href="/pcbuilder">
+            <button type="default" block size="large" className="text-blue-500">
+              PC Builder
+            </button>
+          </Link>
         </div>
       </Header>
       <Content>
