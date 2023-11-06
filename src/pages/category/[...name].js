@@ -38,7 +38,9 @@ CategoryName.getLayout = function getLayout(page) {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch("https://pc-builder-mocha.vercel.app/api/v1/pcparts");
+  const res = await fetch(
+    "https://pc-builder-server-six-psi.vercel.app/api/v1/pcparts"
+  );
   const data = await res.json();
   return {
     props: {

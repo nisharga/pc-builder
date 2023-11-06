@@ -14,7 +14,7 @@ const Ssgmenu = ({ user }) => {
     { id: 9, title: "Mouse", url: "/category/mouse" },
   ];
   return (
-    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["8"]}>
+    <Menu theme="dark" mode="horizontal">
       {data.map((item) => (
         <Menu.Item key={item.id}>
           <Link href={item.url}>{item.title}</Link>

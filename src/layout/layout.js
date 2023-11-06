@@ -23,10 +23,11 @@ const RootLayout = ({ children }) => {
         </Link>
         <Ssgmenu />
         <div className="w-[200px] ml-4 lg:block d-none">
-          <Link href="/pcbuilder">
-            <button type="default" block size="large" className="text-blue-500">
-              PC Builder
-            </button>
+          <Link
+            href="/pcbuilder"
+            className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 hover:text-[#fff] focus:outline-none focus:ring active:bg-blue-500 sm:w-auto text-center"
+          >
+            PC Builder
           </Link>
         </div>
       </Header>
