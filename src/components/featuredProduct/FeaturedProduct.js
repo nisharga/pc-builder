@@ -2,8 +2,6 @@ import React from "react";
 import Singleproduct from "../singleproduct/singleproduct";
 
 const Featuredproduct = ({ allProduct }) => {
-  /* const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
-  const randomSixData = shuffle(allProduct); */
   return (
     <>
       <div className="md:w-3/12 mx-auto text-center mt-12 mb-10">

@@ -20,7 +20,7 @@ const Pcbuilder = () => {
         content="Build Your Own PC Just 1 minutes"
         bannar="https://images.pexels.com/photos/7639373/pexels-photo-7639373.jpeg?auto=compress&cs=tinysrgb&w=600"
       />
-      <div className="mx-10 mt-12">
+      <div className="mx-10 mt-12 pb-10">
         <div className="grid grid-cols-12">
           <div className="lg:col-span-2 col-span-3 bg-gray-500 text-[#fff] flex items-center font-2xl p-2">
             <span className="text-4xl">
