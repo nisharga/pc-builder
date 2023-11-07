@@ -4,17 +4,15 @@ import { Inter } from "next/font/google";
 // import Bannar from "./../components/bannar/bannar";
 import SingleCategory from "@/components/singleCategory/singleCategory";
 import Singleproduct from "@/components/singleproduct/singleproduct";
+import Bannar from "@/components/bannar/bannar";
 
 export default function Home({ allProduct }) {
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
   const randomSixData = shuffle(allProduct);
   console.log(randomSixData.length);
-
-  // const NoSSR = dynamic(() => import("../components/no-ssr"), { ssr: false });
-
   return (
     <>
-      {/* <Bannar /> */}
+      <Bannar />
       {/*  <div className="md:w-3/12 mx-auto text-center mt-12 mb-10">
         <h4 className=" mb-3 text-lg">Check & Get Your Desired Product!</h4>
         <h2 className="text-3xl uppercase border-y-4 py-3 text-[#0000ff]">
@@ -41,7 +39,6 @@ export default function Home({ allProduct }) {
         </div>
       </div>
  */}
-      Hi HEllo
     </>
   );
 }

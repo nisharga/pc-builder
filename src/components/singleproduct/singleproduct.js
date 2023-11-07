@@ -57,10 +57,10 @@ const Singleproduct = ({ data }) => {
             Add To Builder
           </button>
           <Link
-            class="inline-flex items-center gap-2 rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+            className="inline-flex items-center gap-2 rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
             href={`/product/${data?._id}`}
           >
-            <span class="text-sm font-medium"> View Details </span>
+            <span className="text-sm font-medium"> View Details </span>
 
             <svg
               className="h-5 w-5 rtl:rotate-180"
