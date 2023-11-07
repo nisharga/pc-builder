@@ -1,11 +1,22 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// };
-
-// module.exports = nextConfig;
-module.exports = {
+const nextConfig = {
+  reactStrictMode: true,
   images: {
-    domains: ["www.startech.com.bd"], // Add your domain here
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pexels.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.startech.com.bd",
+      },
+    ],
   },
 };
+
+module.exports = nextConfig;

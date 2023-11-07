@@ -1,19 +1,10 @@
-import Image from "next/image";
 
-import Ram from "../../public/images/ram.jpg";
-import Cpu from "../../public/images/cpu.jpg";
-import Motherboard from "../../public/images/motherboard.jpg";
-import Power from "../../public/images/powersupply.jpg";
-import Storage from "../../public/images/stroage.jpg";
-import Monitor from "../../public/images/monitor.jpg";
-import Casing from "../../public/images/casing.jpg";
-import KeyBoard from "../../public/images/keyboard.jpg";
-import Mouse from "../../public/images/mouse.jpg";
+
 import SingleCategory from "@/components/singleCategory/singleCategory";
 import RootLayout from "@/layout/layout";
 import SectinonBannar from "@/components/shared/sectionbannar/sectionbannar";
 
-const Category = ({ pcData }) => {
+const Category = () => {
   const data = [
     { id: 1, title: "Ram", url: "/category/ram" },
     { id: 2, title: "Cpu", url: "/category/cpu" },

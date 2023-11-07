@@ -26,5 +26,5 @@ const ramSlice = createSlice({
   },
 });
 
-export const { addToCartRam, removeFromCartRam } = ramSlice.actions;
+export const { addToCartRam } = ramSlice.actions;
 export default ramSlice.reducer;

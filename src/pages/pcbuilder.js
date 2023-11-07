@@ -253,7 +253,7 @@ const Pcbuilder = () => {
           <button
             disabled={ramproducts?.length < 6 ? true : false}
             className={`lg:mr-44 inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition focus:outline-none focus:ring active:text-indigo-500 ${
-              !ramproducts?.length < 6 ? "hover:scale-110 hover:shadow-xl" : ""
+              ramproducts?.length >= 6 ? "hover:scale-110 hover:shadow-xl" : ""
             }`}
             onClick={() => alert("PC Build Done")}
           >
