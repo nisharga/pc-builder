@@ -6,17 +6,6 @@ import SingleCategory from "@/components/singleCategory/singleCategory";
 import Singleproduct from "@/components/singleproduct/singleproduct";
 
 export default function Home({ allProduct }) {
-  const data = [
-    { id: 1, title: "Ram", url: "/category/ram" },
-    { id: 2, title: "Cpu", url: "/category/cpu" },
-    { id: 3, title: "Motherboard", url: "/category/motherboard" },
-    { id: 4, title: "Power", url: "/category/power-supply-unit" },
-    { id: 5, title: "Storage", url: "/category/storage" },
-    { id: 6, title: "Monitor", url: "/category/monitor" },
-    { id: 7, title: "Casing", url: "/category/casing" },
-    { id: 8, title: "KeyBoard", url: "/category/keyboard" },
-    { id: 9, title: "Mouse", url: "/category/mouse" },
-  ];
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
   const randomSixData = shuffle(allProduct);
   console.log(randomSixData.length);

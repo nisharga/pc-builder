@@ -81,7 +81,7 @@ const Dropd = () => {
                   aria-expanded="true"
                 >
                   <span className="flex items-center space-x-2">
-                    Dropdown
+                    Categories
                     {isOpen ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}
                   </span>
                 </button>
@@ -95,20 +95,48 @@ const Dropd = () => {
                   aria-labelledby="options-menu"
                 >
                   <div className="py-1" role="none">
-                    <a
-                      href="#"
+                    <Link
+                      href="/category/ram"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900"
                       role="menuitem"
                     >
-                      Option 2
-                    </a>
-                    <a
-                      href="#"
+                      Ram
+                    </Link>
+                    <Link
+                      href="/category/cpu"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900"
                       role="menuitem"
                     >
-                      Option 3
-                    </a>
+                      Cpu
+                    </Link>
+                    <Link
+                      href="/category/motherboard"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900"
+                      role="menuitem"
+                    >
+                      Motherboard
+                    </Link>
+                    <Link
+                      href="/category/power-supply-unit"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900"
+                      role="menuitem"
+                    >
+                      Power Supply
+                    </Link>
+                    <Link
+                      href="/category/storage"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900"
+                      role="menuitem"
+                    >
+                      Storage
+                    </Link>
+                    <Link
+                      href="/category/monitor"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900"
+                      role="menuitem"
+                    >
+                      Monitor
+                    </Link>
                   </div>
                 </div>
               </div>
