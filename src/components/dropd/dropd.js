@@ -151,19 +151,6 @@ const Dropd = () => {
                   PC Builder
                 </Link>
               </li>
-
-              {/* <li className="text-gray-600">
-                <span className="font-bold"> (Nisharga Kabir)</span>
-              </li>
-              <button
-                onClick={() => alert("Logout done")}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Logout
-              </button> */}
-              {/* <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/">Login</Link>
-              </li> */}
             </ul>
           </div>
         </div>
