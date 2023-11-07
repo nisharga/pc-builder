@@ -1,12 +1,15 @@
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { RiMenu2Fill } from "react-icons/ri";
+import { signOut } from "next-auth/react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
-  const user = "nisharga";
+  // const user = "nisharga";
+  const { data: session } = useSession();
   return (
     <nav className="z-[60] sticky top-0 p-4 text-white bg-[#07091E] ">
       <div className="container mx-auto p-1 relative">
@@ -36,12 +39,14 @@ const Header = () => {
           </ul>
           {/* third part space-x-4 hidden md:block */}
           <div className="hidden md:flex space-x-4">
-            <div className="text-lg font-bold mt-2 uppercase">Display Name</div>
+            <div className="text-lg font-bold mt-2 uppercase">
+              {data?.user?.name}
+            </div>
             <div>
               {/* conditioning outLout and SignIn button*/}
               {user ? (
                 <button
-                  onClick={() => logOut()}
+                  onClick={() => signOut()}
                   className="transition-all delay-100 duration-300 font-semibold text-white px-8 py-2 rounded-full bg-gradient-to-r from-[#00B6BD] to-[#ACFFAD]"
                 >
                   Log Out

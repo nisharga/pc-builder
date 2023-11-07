@@ -11,6 +11,7 @@ const Dropd = () => {
   /* const toggleDropdown = () => {
     setIsOpen(!isOpen);
   }; */
+
   return (
     <nav className="w-full bg-white shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -68,7 +69,7 @@ const Dropd = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/">Homep</Link>
+                <Link href="/login">Login</Link>
               </li>
 
               <div className="relative inline-block text-left">
