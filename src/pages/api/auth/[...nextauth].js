@@ -7,5 +7,8 @@ export const authOptions = {
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
     }),
   ],
+  pages: {
+    signIn: "/login",
+  },
 };
 export default NextAuth(authOptions);
