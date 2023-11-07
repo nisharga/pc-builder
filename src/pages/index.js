@@ -11,6 +11,19 @@ export default function Home({ allProduct }) {
   console.log(session);
   return (
     <>
+      {session && (
+        <div className="bg-indigo-600 px-4 py-3 text-white flex justify-center items-center">
+          <p className="text-center text-sm font-medium mr-3">
+            WelCome {session?.user?.name}
+          </p>
+          <button
+            onClick={() => alert("Logout done")}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Logout
+          </button>
+        </div>
+      )}
       <Bannar />
       <Featuredproduct allProduct={allProduct} key={allProduct._id} />
       <FeaturedCategory />

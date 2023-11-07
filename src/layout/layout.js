@@ -4,7 +4,7 @@ import Link from "next/link";
 import Ssgmenu from "@/components/ssgmenu/ssgmenu";
 const { Header, Content, Footer } = Layout;
 import { Button } from "antd";
-import Dropd from "@/components/dropd/dropd";
+import Dropd from "@/components/dropd/dropd"; 
 
 const RootLayout = ({ children }) => {
   const {

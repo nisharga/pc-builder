@@ -8,6 +8,7 @@ const Dropd = () => {
 
   // dropdown
   const [isOpen, setIsOpen] = useState(false);
+
   /* const toggleDropdown = () => {
     setIsOpen(!isOpen);
   }; */
@@ -151,7 +152,7 @@ const Dropd = () => {
                 </Link>
               </li>
 
-              <li className="text-gray-600">
+              {/* <li className="text-gray-600">
                 <span className="font-bold"> (Nisharga Kabir)</span>
               </li>
               <button
@@ -159,7 +160,7 @@ const Dropd = () => {
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Logout
-              </button>
+              </button> */}
               {/* <li className="text-gray-600 hover:text-blue-600">
                 <Link href="/">Login</Link>
               </li> */}
