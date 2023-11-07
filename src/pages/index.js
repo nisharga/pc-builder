@@ -1,10 +1,9 @@
-import SingleCategory from "@/components/singleCategory/singleCategory";
-import Singleproduct from "@/components/singleproduct/singleproduct";
 import Bannar from "@/components/bannar/bannar";
 import RootLayout from "@/layout/layout";
 import Featuredproduct from "@/components/featuredProduct/FeaturedProduct";
 import FeaturedCategory from "@/components/featuredCategory/featuredCategory";
 import { useSession } from "next-auth/react";
+import { signOut } from "next-auth/react";
 
 export default function Home({ allProduct }) {
   const { data: session } = useSession();
@@ -13,11 +12,11 @@ export default function Home({ allProduct }) {
     <>
       {session && (
         <div className="bg-indigo-600 px-4 py-3 text-white flex justify-center items-center">
-          <p className="text-center text-sm font-medium mr-3">
+          <p className="text-center text-sm font-medium mr-3 ">
             WelCome {session?.user?.name}
           </p>
           <button
-            onClick={() => alert("Logout done")}
+            onClick={() => signOut()}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             Logout
